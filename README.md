@@ -1,2 +1,35 @@
 # dotfiles
-Exploring the world of automated computer setup and configuration
+
+I've recently had to setup my 3rd MacBook from scratch, working off an often outdated note file that outlined everything I remember needing to do to get things setup but I always missed something. After discovering the https://dotfiles.github.io/ site and exploring how people have made shell scripts to automate new computer setup, even going as far as installing full apps with homebrew cask and setting apple preferences... I've been pretty impressed at how much passion and care goes into these projects, and I decided I wanted to tackle something like this myself.
+
+I'm pretty busy, so right now this repo is going to house some links, notes, and thoughts. I imagine the structure will change drastically over time as I figure out what feels right to me and fits my personal organization practices.
+
+## Reading list
+
+- [setting up your mac for web development](https://betterprogramming.pub/setting-up-your-mac-for-web-development-in-2020-659f5588b883#50f4)
+- [dotfiles](https://dotfiles.github.io/)
+- [getting started with dotfiles](https://www.webpro.nl/articles/getting-started-with-dotfiles)
+- [getting started with dotfiles 2](https://driesvints.com/blog/getting-started-with-dotfiles/)
+- [encrypted dotfiles](https://abdullah.today/encrypted-dotfiles/)
+- [dotfiles are meant to be forked](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
+- [awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [awesome dotenv](https://github.com/jondot/awesome-devenv)
+- [terminals are sexy](https://github.com/k4m4/terminals-are-sexy)
+- [macos defaults](https://github.com/kevinSuttle/macOS-Defaults)
+- [dockutil](https://github.com/kcrawford/dockutil)
+- [holman dotfiles](https://github.com/holman/dotfiles)
+- [mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [repository management](https://kalis.me/increasing-development-productivity-repository-management/)
+- [thoughtbot laptop](https://github.com/thoughtbot/laptop/blob/main/mac)
+
+## The goal
+
+Ideally, I'd have a shell script to install pretty much everything I need, then I'd setup ssh gpg keys somehow so that they're consistent across all my machines, then I'd clone this repo to configure everything the way I like it.
+
+End result is boom: MacBook with every CLI I need, programs installed, security keys setup, authenticated with everything, and all my preferences set, all with a single or handful of scripts.
+
+## Slow process
+
+I'll take me a long time to digest all the readings and exploring the rabbit holes they lead me down, it'll take a long time to get a deep understanding of how all these files work, it'll take a long time to truly understand what all the commands do and exactly how I need to put the pieces together to get exactly what I want, and it'll take even longer to figure out a secure way to never have to manually setup ssh / gpg keys again because good god thats a nightmare.
+
+But over time, I hope to grow this into something deeply personal and that I'll understand every line of every file, and eventually, it'll make my life easier. Not just by setting up new computers, but in ways I haven't even begun to explore.
