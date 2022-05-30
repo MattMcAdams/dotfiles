@@ -6,19 +6,26 @@ I'm pretty busy, so right now this repo is going to house some links, notes, and
 
 ## Reading list
 
-- [setting up your mac for web development](https://betterprogramming.pub/setting-up-your-mac-for-web-development-in-2020-659f5588b883#50f4)
-- [dotfiles](https://dotfiles.github.io/)
+- [Make a file executable](https://support.apple.com/guide/terminal/make-a-file-executable-apdd100908f-06b3-4e63-8a87-32e71241bab4/mac)
+- [Holman MacOS defaults](https://github.com/holman/dotfiles/blob/master/macos/set-defaults.sh)
+- [mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
+- [OSX for hackers](https://gist.github.com/brandonb927/3195465/)
+- [Paul Miller's dotfiles](https://github.com/paulmillr/dotfiles)
 - [getting started with dotfiles](https://www.webpro.nl/articles/getting-started-with-dotfiles)
-- [getting started with dotfiles 2](https://driesvints.com/blog/getting-started-with-dotfiles/)
 - [encrypted dotfiles](https://abdullah.today/encrypted-dotfiles/)
-- [dotfiles are meant to be forked](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
+- [terminals are sexy](https://github.com/k4m4/terminals-are-sexy)
 - [awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 - [awesome dotenv](https://github.com/jondot/awesome-devenv)
-- [terminals are sexy](https://github.com/k4m4/terminals-are-sexy)
+
+## Further readings
+
+- [setting up your mac for web development](https://betterprogramming.pub/setting-up-your-mac-for-web-development-in-2020-659f5588b883#50f4)
+- [dotfiles](https://dotfiles.github.io/)
+- [getting started with dotfiles 2](https://driesvints.com/blog/getting-started-with-dotfiles/)
+- [dotfiles are meant to be forked](https://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked/)
 - [macos defaults](https://github.com/kevinSuttle/macOS-Defaults)
 - [dockutil](https://github.com/kcrawford/dockutil)
 - [holman dotfiles](https://github.com/holman/dotfiles)
-- [mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
 - [repository management](https://kalis.me/increasing-development-productivity-repository-management/)
 - [thoughtbot laptop](https://github.com/thoughtbot/laptop/blob/main/mac)
 
