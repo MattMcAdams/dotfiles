@@ -6,6 +6,9 @@ I'm pretty busy, so right now this repo is going to house some links, notes, and
 
 ## Reading list
 
+- [Example install script](https://github.com/driesvints/dotfiles/blob/main/fresh.sh)
+- [Cool dot command](https://github.com/webpro/dotfiles/blob/master/bin/dot)
+- [Configure ZSH](https://thevaluable.dev/zsh-install-configure-mouseless/)
 - [Make a file executable](https://support.apple.com/guide/terminal/make-a-file-executable-apdd100908f-06b3-4e63-8a87-32e71241bab4/mac)
 - [Holman MacOS defaults](https://github.com/holman/dotfiles/blob/master/macos/set-defaults.sh)
 - [mathias’s dotfiles](https://github.com/mathiasbynens/dotfiles)
