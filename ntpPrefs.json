@@ -1,0 +1,345 @@
+[
+  {
+    "case": "MyBama",
+    "color": "red",
+    "iconSet": "fa-solid",
+    "icon": "fa-building-columns"
+  },
+  { "case": "Box", "color": "blue", "iconSet": "fa-solid", "icon": "fa-box" },
+  {
+    "case": "Outlook",
+    "color": "indego",
+    "iconSet": "fa-solid",
+    "icon": "fa-envelope"
+  },
+  {
+    "case": "VoIP Mailbox",
+    "color": "gray",
+    "iconSet": "fa-solid",
+    "icon": "fa-phone"
+  },
+  {
+    "case": "Trello",
+    "color": "light-blue",
+    "iconSet": "fa-brands",
+    "icon": "fa-trello"
+  },
+  {
+    "case": "Slack",
+    "color": "light-green",
+    "iconSet": "fa-brands",
+    "icon": "fa-slack"
+  },
+  {
+    "case": "Analytics",
+    "color": "yellow",
+    "iconSet": "fa-solid",
+    "icon": "fa-chart-line"
+  },
+  {
+    "case": "BitBucket",
+    "color": "cyan",
+    "iconSet": "fa-brands",
+    "icon": "fa-bitbucket"
+  },
+  {
+    "case": "Beanstalk",
+    "color": "green",
+    "iconSet": "fa-solid",
+    "icon": "fa-seedling"
+  },
+  {
+    "case": "DynoMapper",
+    "color": "orange",
+    "iconSet": "fa-solid",
+    "icon": "fa-map"
+  },
+  {
+    "case": "AMP",
+    "color": "teal",
+    "iconSet": "fa-solid",
+    "icon": "fa-shield"
+  },
+  {
+    "case": "BaseCamp",
+    "color": "yellow",
+    "iconSet": "fa-solid",
+    "icon": "fa-campground"
+  },
+  {
+    "case": "Payroll",
+    "color": "red",
+    "iconSet": "fa-solid",
+    "icon": "fa-money-bill-1"
+  },
+  {
+    "case": "Whimsical",
+    "color": "indego",
+    "iconSet": "fa-solid",
+    "icon": "fa-w"
+  },
+  {
+    "case": "PhotoShelter",
+    "color": "brown",
+    "iconSet": "fa-solid",
+    "icon": "fa-images"
+  },
+  {
+    "case": "BrowserStack",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-internet-explorer"
+  },
+  {
+    "case": "Leave Request",
+    "color": "orange",
+    "iconSet": "fa-solid",
+    "icon": "fa-door-open"
+  },
+  {
+    "case": "Resources Request",
+    "color": "brown",
+    "iconSet": "fa-solid",
+    "icon": "fa-table-list"
+  },
+  {
+    "case": "Ghost",
+    "color": "blue",
+    "iconSet": "fa-solid",
+    "icon": "fa-ghost"
+  },
+  {
+    "case": "Harper Docs",
+    "color": "pink",
+    "iconSet": "fa-solid",
+    "icon": "fa-book"
+  },
+  {
+    "case": "Wilson Playground",
+    "color": "deep-purple",
+    "iconSet": "fa-solid",
+    "icon": "fa-vial"
+  },
+  {
+    "case": "GB Sandbox",
+    "color": "indego",
+    "iconSet": "fa-solid",
+    "icon": "fa-vial"
+  },
+  {
+    "case": "Website",
+    "color": "cyan",
+    "iconSet": "fa-solid",
+    "icon": "fa-earth-americas"
+  },
+  {
+    "case": "GitHub",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-github"
+  },
+  {
+    "case": "Netlify",
+    "color": "teal",
+    "iconSet": "fa-solid",
+    "icon": "fa-network-wired"
+  },
+  {
+    "case": "Hover",
+    "color": "light-green",
+    "iconSet": "fa-solid",
+    "icon": "fa-h"
+  },
+  {
+    "case": "Stripe",
+    "color": "indego",
+    "iconSet": "fa-brands",
+    "icon": "fa-stripe"
+  },
+  {
+    "case": "Drive",
+    "color": "red",
+    "iconSet": "fa-brands",
+    "icon": "fa-google-drive"
+  },
+  {
+    "case": "Search Console",
+    "color": "orange",
+    "iconSet": "fa-solid",
+    "icon": "fa-magnifying-glass"
+  },
+  {
+    "case": "Plausible",
+    "color": "slate",
+    "iconSet": "fa-solid",
+    "icon": "fa-chart-bar"
+  },
+  {
+    "case": "Cloud Storage",
+    "color": "brown",
+    "iconSet": "fa-solid",
+    "icon": "fa-server"
+  },
+  {
+    "case": "Website Repo",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-github"
+  },
+  {
+    "case": "Bamboo",
+    "color": "light-green",
+    "iconSet": "fa-solid",
+    "icon": "fa-seedling"
+  },
+  {
+    "case": "Frontier",
+    "color": "orange",
+    "iconSet": "fa-solid",
+    "icon": "fa-house-flag"
+  },
+  {
+    "case": "Frontier Federal",
+    "color": "deep-orange",
+    "iconSet": "fa-solid",
+    "icon": "fa-building-flag"
+  },
+  {
+    "case": "Total Connect",
+    "color": "pink",
+    "iconSet": "fa-solid",
+    "icon": "fa-rss"
+  },
+  {
+    "case": "ShadowDragon Website",
+    "color": "red",
+    "iconSet": "fa-solid",
+    "icon": "fa-dragon"
+  },
+  {
+    "case": "GitHub",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-github"
+  },
+  {
+    "case": "Directory",
+    "color": "teal",
+    "iconSet": "fa-solid",
+    "icon": "fa-address-book"
+  },
+  {
+    "case": "Github",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-github"
+  },
+  {
+    "case": "Horizon",
+    "color": "indego",
+    "iconSet": "fa-solid",
+    "icon": "fa-diagram-project"
+  },
+  {
+    "case": "OI Monitor",
+    "color": "deep-purple",
+    "iconSet": "fa-solid",
+    "icon": "fa-tower-observation"
+  },
+  {
+    "case": "SocialNet API",
+    "color": "blue",
+    "iconSet": "fa-solid",
+    "icon": "fa-book"
+  },
+  {
+    "case": "ReGraph",
+    "color": "brown",
+    "iconSet": "fa-solid",
+    "icon": "fa-r"
+  },
+  {
+    "case": "Wrike",
+    "color": "green",
+    "iconSet": "fa-solid",
+    "icon": "fa-list-check"
+  },
+  {
+    "case": "Aren | Carrd",
+    "color": "pink",
+    "iconSet": "fa-solid",
+    "icon": "fa-address-card"
+  },
+  {
+    "case": "Google Maps",
+    "color": "gray",
+    "iconSet": "fa-solid",
+    "icon": "fa-map-location-dot"
+  },
+  {
+    "case": "Apple Card",
+    "color": "slate",
+    "iconSet": "fa-brands",
+    "icon": "fa-cc-apple-pay"
+  },
+  {
+    "case": "Barclays",
+    "color": "light-blue",
+    "iconSet": "fa-solid",
+    "icon": "fa-credit-card"
+  },
+  {
+    "case": "PNC Bank",
+    "color": "orange",
+    "iconSet": "fa-brands",
+    "icon": "fa-cc-visa"
+  },
+  {
+    "case": "Synovus Mortgage",
+    "color": "red",
+    "iconSet": "fa-solid",
+    "icon": "fa-building-columns"
+  },
+  {
+    "case": "Belk Card",
+    "color": "indego",
+    "iconSet": "fa-solid",
+    "icon": "fa-shirt"
+  },
+  {
+    "case": "Regions Bank",
+    "color": "light-green",
+    "iconSet": "fa-solid",
+    "icon": "fa-money-bill-1-wave"
+  },
+  {
+    "case": "Macy's",
+    "color": "pink",
+    "iconSet": "fa-solid",
+    "icon": "fa-star"
+  },
+  {
+    "case": "My Best Buy",
+    "color": "blue",
+    "iconSet": "fa-solid",
+    "icon": "fa-tag"
+  },
+  {
+    "case": "Material UI",
+    "color": "blue",
+    "iconSet": "fa-solid",
+    "icon": "fa-cube"
+  },
+  {
+    "case": "Budget",
+    "color": "green",
+    "iconSet": "fa-solid",
+    "icon": "fa-table"
+  },
+  {
+    "case": "Upstart",
+    "color": "teal",
+    "iconSet": "fa-solid",
+    "icon": "fa-angles-up"
+  }
+]

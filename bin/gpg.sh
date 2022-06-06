@@ -1,0 +1,1 @@
+/Users/matt/Developer/dotfiles/git/gpg.sh

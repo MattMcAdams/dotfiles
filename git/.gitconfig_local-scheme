@@ -1,0 +1,14 @@
+[user]
+
+	name = AUTHORNAME
+	email = AUTHOREMAIL
+	SIGNINGKEY
+
+[credential]
+
+	helper = GIT_CREDENTIAL_HELPER
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = GPGSIGN

@@ -4,6 +4,23 @@ I've recently had to setup my 3rd MacBook from scratch, working off an often out
 
 I'm pretty busy, so right now this repo is going to house some links, notes, and thoughts. I imagine the structure will change drastically over time as I figure out what feels right to me and fits my personal organization practices.
 
+## Installation
+
+Setup symlinks and zsh configuration
+
+```sh
+cd path/to/dotfiles
+
+ln -s zsh/.zshenv ~
+source ~/.zshenv
+ln -s zsh/.zshrc $ZDOTDIR
+source $ZDOTDIR/.zshrc
+
+ln -s git/.gitconfig ~
+ln -s git/.git_aliases $XDG_CONFIG_HOME/git
+ln -s git/.gitignore $XDG_CONFIG_HOME/git
+```
+
 ## Reading list
 
 - [Example install script](https://github.com/driesvints/dotfiles/blob/main/fresh.sh)
