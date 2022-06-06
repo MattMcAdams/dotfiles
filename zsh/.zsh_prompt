@@ -15,15 +15,16 @@
 prompt_config() {
   # Display git status
   __git_prompt_status() {
-    local INDEX TRACKING AHEAD BEHIND STATUS
+    local INDEX TRACKING AHEAD BEHIND STATUS EDITS
 
     INDEX=$(git status --porcelain 2> /dev/null)
     TRACKING=$(git rev-parse --abbrev-ref @{upstream} 2>&1)
     AHEAD=$(git rev-list HEAD@{upstream}..HEAD 2> /dev/null | wc -l | awk '{$1=$1};1')
     BEHIND=$(git rev-list HEAD..HEAD@{upstream} 2> /dev/null | wc -l | awk '{$1=$1};1')
     STATUS=""
+    EDITS=$(echo $INDEX | wc -l | awk '{$1=$1};1')
 
-    if $(command git rev-parse --verify refs/stash >/dev/null 2>&1); then
+    if $(command git rev-parse --verify refs/stash &>/dev/null); then
       STATUS="%F{cyan}↩︎%f $STATUS"
     fi
 
@@ -41,7 +42,7 @@ prompt_config() {
     fi
 
     if [[ ! -z "$INDEX" ]]; then
-      STATUS="$STATUS%B%F{blue}*%f%b "
+      STATUS="$STATUS$EDITS%B%F{blue}*%f%b "
     fi
 
     if [[ ! -z "$STATUS" ]]; then
