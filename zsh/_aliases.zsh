@@ -18,12 +18,6 @@ alias copy="pbcopy && echo Copied: $(pbpaste)"
 alias gpg-sec-keys="echo $(gpg --list-secret-keys --keyid-format=long | awk -F '[ /]+' '/sec/{print $3}')"
 
 
-# Directories
-
-alias dotfiles="cd $DOTFILES"
-alias projects="cd ~/Developer/projects/"
-
-
 # Network
 
 alias ip="curl ifconfig.me --silent"

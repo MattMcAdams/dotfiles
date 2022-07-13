@@ -13,6 +13,7 @@ cd path/to/dotfiles
 
 ln -s zsh/.zshenv ~
 source ~/.zshenv
+touch -s $ZDOTDIR/.localrc
 ln -s zsh/.zshrc $ZDOTDIR
 source $ZDOTDIR/.zshrc
 

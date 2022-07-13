@@ -17,4 +17,4 @@ export PROJECTS=$HOME/Developer/projects
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/.npmrc
 
 # Load paths
-source $DOTFILES/zsh/.zshrc_paths
+source $DOTFILES/zsh/_paths.zsh
