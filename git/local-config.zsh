@@ -7,7 +7,7 @@ if ! [ -f $LOCALFILE ]
 then
   CONTINUE=true
 else
-  echo ".gitconfig.local already exists, are you sure you want to override it? (y/n)"
+  echo ".gitconfig_local already exists, are you sure you want to override it? (y/n)"
   read -r response
   if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
   then

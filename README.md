@@ -9,19 +9,20 @@ I'm pretty busy, so right now this repo is going to house some links, notes, and
 Setup symlinks and zsh configuration
 
 ```sh
-cd path/to/dotfiles
-
-ln -s zsh/.zshenv ~
+ln -s ~/dotfiles_path/zsh/.zshenv ~
 source ~/.zshenv
-touch -s $ZDOTDIR/.localrc
+mkdir $ZDOTDIR
+touch $ZDOTDIR/.localrc
 ln -s zsh/.zshrc $ZDOTDIR
 source $ZDOTDIR/.zshrc
 
+mkdir $XDG_CONFIG_HOME/git
 ln -s git/.gitconfig ~
-ln -s git/.git_aliases $XDG_CONFIG_HOME/git
-ln -s git/.gitignore $XDG_CONFIG_HOME/git
+ln -s git/.git_aliases $XDG_CONFIG_HOME/git/.git_aliases
+ln -s git/.gitignore $XDG_CONFIG_HOME/git/.gitignore
 
-ln -s npm/.npmrc $XDG_CONFIG_HOME/npm
+mkdir $XDG_CONFIG_HOME/npm
+ln -s npm/.npmrc $XDG_CONFIG_HOME/npm/.npmrc
 ```
 
 NOTE: This will make the default `npm config` command not work at the user level because the npmrc file is a symlink. You'll need to edit the npmrc file in the $DOTFILES directory manually. npm config for project & global level configuration should be unaffected.
