@@ -24,7 +24,7 @@ ln -s git/.gitignore $XDG_CONFIG_HOME/git
 ln -s npm/.npmrc $XDG_CONFIG_HOME/npm
 ```
 
-NOTE: This will make the default npm config not work at the user level because the npmrc file is a symlink. You'll need to edit the npmrc file in the $DOTFILES directory manually. npm config for project & global level configuration should be unaffected.
+NOTE: This will make the default `npm config` command not work at the user level because the npmrc file is a symlink. You'll need to edit the npmrc file in the $DOTFILES directory manually. npm config for project & global level configuration should be unaffected.
 
 ## Reading list
 

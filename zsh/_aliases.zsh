@@ -9,8 +9,10 @@ alias paths='echo -e ${PATH//:/\\n}'
 
 alias symlink="ln -s"
 alias make-exe="chmod 700"
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias copy="pbcopy && echo Copied: $(pbpaste)"
+
+copy() {
+  pbcopy $1 && echo "Copied: $(pbpaste)"
+}
 
 
 # GPG
