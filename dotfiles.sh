@@ -6,10 +6,10 @@ echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Installing Homebrew Formulae"
 brew install gh
-brew install gnupg
-brew install go
 brew install node
+brew install gnupg
 brew install pinentry
+brew install pinentry-mac
 echo "Installing Homebrew Casks"
 brew install --cask visual-studio-code
 brew install --cask slack

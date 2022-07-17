@@ -9,26 +9,62 @@ I'm pretty busy, so right now this repo is going to house some links, notes, and
 Setup symlinks and zsh configuration
 
 ```sh
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install gh
+brew install node
+brew install gnupg
+brew install pinentry
+brew install pinentry-mac
+
+git clone git@github.com:MattMcAdams/dotfiles.git
+
 ln -s ~/dotfiles_path/zsh/.zshenv ~
 source ~/.zshenv
 mkdir $ZDOTDIR
 touch $ZDOTDIR/.localrc
-ln -s zsh/.zshrc $ZDOTDIR
+ln -s $DOTFILES/zsh/.zshrc $ZDOTDIR
 source $ZDOTDIR/.zshrc
 
 mkdir $XDG_CONFIG_HOME/git
-ln -s git/.gitconfig ~
-ln -s git/.git_aliases $XDG_CONFIG_HOME/git/.git_aliases
-ln -s git/.gitignore $XDG_CONFIG_HOME/git/.gitignore
+ln -s $DOTFILES/git/.gitconfig ~
+ln -s $DOTFILES/git/.git_aliases $XDG_CONFIG_HOME/git/.git_aliases
+ln -s $DOTFILES/git/.gitignore $XDG_CONFIG_HOME/git/.gitignore
 
 mkdir $XDG_CONFIG_HOME/npm
-ln -s npm/.npmrc $XDG_CONFIG_HOME/npm/.npmrc
+ln -s $DOTFILES/npm/.npmrc $XDG_CONFIG_HOME/npm/.npmrc
+
+$DOTFILES/git/ssh.zsh
+
+gpg --default-new-key-algo rsa4096 --gen-key
+# Use email associated with GH account, comment machine name
+touch ~/.gnupg/gpg-agent.conf
+echo "# Connects gpg-agent to the OSX keychain via the brew-installed
+# pinentry program from GPGtools. This is the OSX 'magic sauce',
+# allowing the gpg key's passphrase to be stored in the login
+# keychain, enabling automatic key signing.
+pinentry-program /usr/local/bin/pinentry-mac" > ~/.gnupg/gpg-agent.conf
+
+echo "test" | gpg --clearsign
+# Input password, should now be saved in macOS keychain
+
+gpg --export --armor your_email | pbcopy
+# Paste this into https://github.com/settings/gpg/new
+# Use machine name as Title
+
+gpg --list-secret-keys
+# Copy your secret key
+$DOTFILES/git/local-config.zsh
+# Paste secret key when prompted
+
+gh auth login
 ```
 
 NOTE: This will make the default `npm config` command not work at the user level because the npmrc file is a symlink. You'll need to edit the npmrc file in the $DOTFILES directory manually. npm config for project & global level configuration should be unaffected.
 
 ## Reading list
 
+- [gpg without gpgTools](https://dev.to/wes/how2-using-gpg-on-macos-without-gpgtools-428f)
 - [Example install script](https://github.com/driesvints/dotfiles/blob/main/fresh.sh)
 - [Cool dot command](https://github.com/webpro/dotfiles/blob/master/bin/dot)
 - [Configure ZSH](https://thevaluable.dev/zsh-install-configure-mouseless/)
