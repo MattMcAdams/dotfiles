@@ -14,7 +14,6 @@ xcode-select --install
 brew install gh
 brew install node
 brew install gnupg
-brew install pinentry
 brew install pinentry-mac
 
 git clone git@github.com:MattMcAdams/dotfiles.git
@@ -56,6 +55,9 @@ gpg --list-secret-keys
 # Copy your secret key
 $DOTFILES/git/local-config.zsh
 # Paste secret key when prompted
+
+killall gpg-agent
+gpg-agent --daemon
 
 gh auth login
 ```
