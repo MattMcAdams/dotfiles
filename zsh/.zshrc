@@ -22,4 +22,4 @@ export GPG_TTY=$(tty)
 
 # Load prompt configuration
 source $DOTFILES/zsh/_prompt.zsh
-m.prompt_config
+prompt_config

@@ -12,7 +12,7 @@
 # %m => shortname host
 # %(?..) => prompt conditional - %(condition.true.false)
 
-m.prompt_config() {
+prompt_config() {
   # Display git status
   __git_prompt_status() {
     local INDEX TRACKING AHEAD BEHIND STATUS EDITS
