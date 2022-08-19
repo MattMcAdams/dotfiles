@@ -1,0 +1,101 @@
+{
+	"// Rule": {
+		"prefix": "/====",
+		"body": "=================================================================",
+		"description": "A horizontal rule."
+	},
+	"// Short Rule": {
+		"prefix": "/==",
+		"body": "==============================",
+		"description": "A shorter horizontal rule."
+	},
+	"// Section": {
+		"prefix": "/section",
+		"scope": "html,css,javascript,typescript,php,vue,vue-html,handlebars,javascriptreact,scss",
+		"body": [
+			"$BLOCK_COMMENT_START =================================================================",
+			"SECTION ${1:Section Name}",
+			"================================================================= $BLOCK_COMMENT_END",
+			"",
+			"$0",
+			"",
+			"$BLOCK_COMMENT_START END !SECTION ${1:Section Name} $BLOCK_COMMENT_END"
+		],
+		"description": "A sectioning comment."
+	},
+	"// Sub-Section": {
+		"prefix": "/sub-sect",
+		"scope": "html,css,javascript,typescript,php,vue,vue-html,handlebars,javascriptreact,scss",
+		"body": [
+			"$BLOCK_COMMENT_START ==============================",
+			"SECTION ${1:Section Name}",
+			"============================== $BLOCK_COMMENT_END",
+			"",
+			"$0",
+			"",
+			"$BLOCK_COMMENT_START END !SECTION ${1:Section Name} $BLOCK_COMMENT_END"
+		],
+		"description": "A sub-section comment."
+	},
+	"// Anchor": {
+		"prefix": "/anchor",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} ANCHOR $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Bookmark a spot in the code"
+	},
+	"// To Do": {
+		"prefix": "/todo",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} TODO $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Indicates unfinished code, or an item that is awaiting completion"
+	},
+	"// Checklist Item": {
+		"prefix": "/item",
+		"body": "${LINE_COMMENT:-} [${1: }] $0",
+		"description": "Indicates unfinished code, or an item that is awaiting completion"
+	},
+	"// Fix Me": {
+		"prefix": "/fixme",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} FIXME $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Indicates problematic / non working code or an item that requires a bugfix"
+	},
+	"// Review": {
+		"prefix": "/review",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} REVIEW $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Indicates code that needs further consideration or testing"
+	},
+	"// Note": {
+		"prefix": "/note",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} NOTE $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Indicates critical information about a piece of code or provides important context for future developers"
+	},
+	"// Temp": {
+		"prefix": ["/temp", "/stub"],
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} TEMP $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Indicates code that is only temporary. This comment and the code it refers to should likely be removed before making a commit or merging into production"
+	},
+	"// Deprecated": {
+		"prefix": "/deprecated",
+		"body": [
+			"${BLOCK_COMMENT_START:$LINE_COMMENT} DEPRECATED $1 $BLOCK_COMMENT_END",
+			"$0"
+		],
+		"description": "Marks code that is no longer supported and needs to be removed in the future"
+	},
+}

@@ -1,0 +1,75 @@
+{
+  "commentAnchors.tags.list": [
+    {
+      "tag": "ANCHOR",
+      "iconColor": "default",
+      "highlightColor": "",
+      "scope": "file",
+      "styleComment": true
+    },
+    {
+      "tag": "TEMP",
+      "iconColor": "pink",
+      "highlightColor": "#e84393",
+      "scope": "workspace",
+      "styleComment": true
+    },
+    {
+      "tag": "DEPRECATED",
+      "iconColor": "pink",
+      "highlightColor": "#e84393",
+      "scope": "file",
+      "styleComment": true
+    },
+    {
+      "tag": "TODO",
+      "iconColor": "teal",
+      "highlightColor": "#00cec9",
+      "scope": "workspace",
+      "styleComment": true
+    },
+    {
+      "tag": "FIXME",
+      "iconColor": "red",
+      "highlightColor": "#F44336",
+      "scope": "workspace",
+      "styleComment": true
+    },
+    {
+      "tag": "NOTE",
+      "iconColor": "orange",
+      "highlightColor": "#ffa100",
+      "scope": "file",
+      "styleComment": true
+    },
+    {
+      "tag": "STUB",
+      "iconColor": "purple",
+      "highlightColor": "#ba68c8",
+      "scope": "file",
+      "enabled": false
+    },
+    {
+      "tag": "REVIEW",
+      "iconColor": "blue",
+      "highlightColor": "#3ea8ff",
+      "scope": "workspace",
+      "styleComment": true
+    },
+    {
+      "tag": "FIX",
+      "iconColor": "emerald",
+      "highlightColor": "#2ecc71",
+      "scope": "file",
+      "styleComment": true
+    },
+    {
+      "tag": "SECTION",
+      "iconColor": "default",
+      "highlightColor": "#CCC",
+      "scope": "file",
+      "isRegion": true,
+      "styleComment": true
+    }
+  ],
+}
