@@ -18,7 +18,7 @@ fi
 
 if ! $CONTINUE; then
   echo "Git Configuration Aborted"
-  exit
+  exit 1
 fi
 
 echo "setup gitconfig"
@@ -32,15 +32,18 @@ fi
 gpg_sign="false"
 git_signingstring=""
 
-echo " - What is your github author name?"
+echo "> What is your github author name?"
 read -r git_authorname
-echo " - What is your github author email?"
+echo "> What is your github author email?"
 read -r git_authoremail
-echo " - Enable GPG Signing? (y/n)"
+echo "> Enable GPG Signing? (y/n)"
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
 then
-  echo 'Please enter your signing key'
+  echo "Getting GPG keys"
+  gpg --list-secret-keys
+  echo ""
+  echo '> Please enter your signing key'
   read git_signingkey
   git_signingstring="signingkey = $git_signingkey"
   gpg_sign="true"

@@ -27,7 +27,6 @@ source $ZDOTDIR/.zshrc
 
 mkdir $XDG_CONFIG_HOME/git
 ln -s $DOTFILES/git/.gitconfig ~
-ln -s $DOTFILES/git/.git_aliases $XDG_CONFIG_HOME/git/.git_aliases
 ln -s $DOTFILES/git/.gitignore $XDG_CONFIG_HOME/git/.gitignore
 
 mkdir $XDG_CONFIG_HOME/npm
