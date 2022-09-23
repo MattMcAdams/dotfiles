@@ -105,3 +105,8 @@
 
 	# Pretty display for git log
 	log-pretty = "log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+
+[push]
+
+	# Avoid having to type --setupstream and stuff when pushing a local branch that doesn't exist on the remote
+	autoSetupRemote = true
