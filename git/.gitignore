@@ -22,7 +22,7 @@ logs
 # IDE files
 # ===============================
 
-.vscode
+.vscode/*
 .idea
 .iml
 *.sublime-workspace

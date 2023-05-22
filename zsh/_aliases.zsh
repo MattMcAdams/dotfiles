@@ -14,11 +14,11 @@ copy() {
   pbcopy $1 && echo "Copied: $(pbpaste)"
 }
 
+alias host-edit="sudo -b /System/Applications/TextEdit.app/Contents/MacOS/TextEdit /etc/hosts"
 
 # GPG
 
 alias gpg-sec-keys="echo $(gpg --list-secret-keys --keyid-format=long | awk -F '[ /]+' '/sec/{print $3}')"
-
 
 # Network
 
