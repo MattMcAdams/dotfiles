@@ -15,6 +15,7 @@ copy() {
 }
 
 alias host-edit="sudo -b /System/Applications/TextEdit.app/Contents/MacOS/TextEdit /etc/hosts"
+alias clean-dns="sudo killall -HUP mDNSResponder"
 
 # GPG
 
