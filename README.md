@@ -11,19 +11,21 @@ Setup symlinks and zsh configuration
 ```sh
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+git clone https://github.com/MattMcAdams/dotfiles.git
+
+ln -s ~/dotfiles_path/zsh/.zshenv ~
+source ~/.zshenv
+mkdir $ZDOTDIR/.
+mkdir $ZDOTDIR/zsh/
+touch $ZDOTDIR/.localrc
+ln -s $DOTFILES/zsh/.zshrc $ZDOTDIR
+source $ZDOTDIR/.zshrc
+
 brew install gh
 brew install node
 brew install gnupg
 brew install pinentry-mac
-
-git clone git@github.com:MattMcAdams/dotfiles.git
-
-ln -s ~/dotfiles_path/zsh/.zshenv ~
-source ~/.zshenv
-mkdir $ZDOTDIR
-touch $ZDOTDIR/.localrc
-ln -s $DOTFILES/zsh/.zshrc $ZDOTDIR
-source $ZDOTDIR/.zshrc
 
 mkdir $XDG_CONFIG_HOME/git
 ln -s $DOTFILES/git/.gitconfig ~
