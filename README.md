@@ -59,6 +59,7 @@ $DOTFILES/git/local-config.zsh
 
 killall gpg-agent
 gpg-agent --daemon
+gpgconf --kill gpg-agent
 
 gh auth login
 ```
