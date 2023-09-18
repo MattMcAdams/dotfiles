@@ -341,5 +341,23 @@
     "color": "teal",
     "iconSet": "fa-solid",
     "icon": "fa-angles-up"
+  },
+  {
+    "case": "GCS",
+    "color": "red",
+    "iconSet": "fa-solid",
+    "icon": "fa-magnifying-glass"
+  },
+  {
+    "case": "OneTrust",
+    "color": "green",
+    "iconSet": "fa-solid",
+    "icon": "fa-building-shield"
+  },
+  {
+    "case": "Pantheon",
+    "color": "yellow",
+    "iconSet": "fa-solid",
+    "icon": "fa-bolt"
   }
 ]
