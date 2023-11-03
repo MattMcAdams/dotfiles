@@ -4,11 +4,11 @@ alias aliases="alias | sed 's/=.*//'"
 alias functions="declare -f | grep '^[a-z].* ()' | sed 's/{$//'"
 alias paths='echo -e ${PATH//:/\\n}'
 
-
 # Utilities
 
 alias symlink="ln -s"
 alias make-exe="chmod 700"
+alias please="sudo !!"
 
 copy() {
   pbcopy $1 && echo "Copied: $(pbpaste)"
