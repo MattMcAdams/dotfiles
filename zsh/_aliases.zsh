@@ -14,8 +14,8 @@ copy() {
   pbcopy $1 && echo "Copied: $(pbpaste)"
 }
 
-alias host-edit="sudo -b /System/Applications/TextEdit.app/Contents/MacOS/TextEdit /etc/hosts"
-alias clean-dns="sudo killall -HUP mDNSResponder"
+alias hosts="sudo nano /etc/hosts"
+alias flush-dns="sudo killall -HUP mDNSResponder"
 
 # GPG
 

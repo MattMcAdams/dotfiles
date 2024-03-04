@@ -20,6 +20,12 @@ compinit
 # Export some GPG thing that fixes some error I ran into one time
 export GPG_TTY=$(tty)
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/mmcadams/google-cloud-sdk 2/path.zsh.inc' ]; then . '/Users/mmcadams/google-cloud-sdk 2/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/mmcadams/google-cloud-sdk 2/completion.zsh.inc' ]; then . '/Users/mmcadams/google-cloud-sdk 2/completion.zsh.inc'; fi
+
 # Load prompt configuration
 source $DOTFILES/zsh/_prompt.zsh
 prompt_config
@@ -31,9 +37,3 @@ echo "    \_'_/-..----.              ____ ___  ____ ___"
 echo " ___/ '   ' ,--+ \            / __ \`__ \/ __ \`__ \\"
 echo "(__...'   __\    |'.___.';   / / / / / / / / / / /"
 echo "  (_,...'(_,.'__)/'.....+   /_/ /_/ /_/_/ /_/ /_/"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/mmcadams/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/mmcadams/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/mmcadams/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/mmcadams/google-cloud-sdk/completion.zsh.inc'; fi
