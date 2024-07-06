@@ -32,7 +32,7 @@ fi
 gpg_sign="false"
 git_signingstring=""
 
-echo "> What is your github author name?"
+echo "> What is your full name?"
 read -r git_authorname
 echo "> What is your github author email?"
 read -r git_authoremail
