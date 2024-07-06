@@ -96,6 +96,9 @@
 	# Amend the currently staged files to the latest commit.
 	amend = commit --amend --reuse-message=HEAD
 
+	# Undo the last commit, keeping changes in the working directory.
+	undo = reset --soft HEAD^
+
 	# Add & Commit at the same time.
 	add-commit = ! "git add . && git commit -m"
 
