@@ -124,6 +124,9 @@
 	# Seach for a string in the commit history
 	search = "!f() { git log --all --grep=\"$1\"; }; f"
 
+	# Find SHA using fragment
+	find = "rev-parse"
+
 	# Squash the last n commits into one
 	squash = "!f() { git rebase -i HEAD~$1; }; f"
 
