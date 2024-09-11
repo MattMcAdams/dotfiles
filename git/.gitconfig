@@ -139,6 +139,9 @@
 	# Update all git submodules
 	module-update = "submodule update --remote --merge"
 
+	# Output number of lines of code in project
+	lines = "!f() { if [[ -n $1 ]]; then git ls-files | grep $1 | xargs wc -l; else git ls-files | xargs wc -l; fi }; f"
+
 [push]
 
 	# Avoid having to type --setupstream and stuff when pushing a local branch that doesn't exist on the remote
